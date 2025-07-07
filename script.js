@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Hide loader when page is loaded
+    const loader = document.querySelector('.loader-container');
+    window.addEventListener('load', () => {
+        loader.classList.add('hidden');
+    });
+
     // Close notification
     const closeNotification = document.querySelector('.close-notification');
     const notification = document.querySelector('.notification-bar');
